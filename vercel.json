@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "env": {
+    "BASE_URL": "@base-url",
+    "OCP_APIM_SUBSCRIPTION_KEY": "@ocp-apim-subscription-key"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ]
+}
